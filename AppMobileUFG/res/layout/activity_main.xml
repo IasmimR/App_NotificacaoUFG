@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill|fill_vertical"
+    android:gravity="center|center_vertical"
+    android:orientation="vertical"
+    tools:context="materiamobile.appmobileufg.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="73dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ufg" />
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="LOGIN" />
+
+    <TextView
+        android:id="@+id/txtnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edtnome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtsenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/edtsenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+</LinearLayout>
