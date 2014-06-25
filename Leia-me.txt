@@ -1,0 +1,15 @@
+Trabalho para a disciplina de Desenvolvimento Mobile
+Aluna: Iasmim Ribeiro
+
+
+Projeto foi desenvolvido na IDE RAD Studio XE6, linguagem Delphi. Motivação: Conhecimento na linguagem e Testando nova IDE de desenvolvimento (INTEGRAÇÃO android com delphi). Como não tinha restrição nos requisitos para a linguagem, optei por migrar o projeto iniciado em java, para o delphi.
+
+
+Licença da IDE(Licença de 30 dias) 
+Product: RAD Studio XE6 Architect Trial 
+
+Serial Number(s): CSFD-EVQ7UV-E9WJ8E-MDNS 
+
+Login Name: djmimirv@hotmail.com 
+
+
