@@ -1,0 +1,93 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'TfgLinkedLabel: Linked label Demo'
+  ClientHeight = 174
+  ClientWidth = 505
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object fgLinkedLabel: TfgLinkedLabel
+    Align = Center
+    AutoSize = True
+    StyledSettings = []
+    Height = 34.000000000000000000
+    HitTest = True
+    TextSettings.Font.Size = 25.000000000000000000
+    TextSettings.Font.Style = [fsUnderline]
+    TextSettings.WordWrap = False
+    Text = 'http://fire-monkey.ru'
+    Width = 233.000000000000000000
+    Url = 'http://fire-monkey.ru'
+  end
+  object PanelSettings: TPanel
+    Align = Left
+    Height = 174.000000000000000000
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Width = 193.000000000000000000
+    TabOrder = 0
+    object gbCommonSettings: TGroupBox
+      Align = Top
+      StyledSettings = [Family, Size, FontColor, Other]
+      Height = 161.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Text = 'Common Settings'
+      TextSettings.Font.Style = [fsBold]
+      Width = 183.000000000000000000
+      TabOrder = 0
+      object Label1: TLabel
+        Height = 17.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 25.000000000000000000
+        Text = 'URI'
+        Width = 120.000000000000000000
+      end
+      object edURI: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Text = 'http://fire-monkey.ru'
+        Position.X = 15.000000000000000000
+        Position.Y = 45.000000000000000000
+        Width = 156.000000000000000000
+        Height = 22.000000000000000000
+        OnChangeTracking = edURIChangeTracking
+      end
+      object Label2: TLabel
+        Height = 17.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 75.000000000000000000
+        Text = 'Caption'
+        Width = 120.000000000000000000
+      end
+      object edCaption: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 4
+        Text = 'http://fire-monkey.ru'
+        Position.X = 15.000000000000000000
+        Position.Y = 95.000000000000000000
+        Width = 156.000000000000000000
+        Height = 22.000000000000000000
+        OnChangeTracking = edCaptionChangeTracking
+      end
+      object cbVisited: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 130.000000000000000000
+        TabOrder = 5
+        Text = 'Visited'
+        Width = 120.000000000000000000
+        OnChange = cbVisitedChange
+      end
+    end
+  end
+end

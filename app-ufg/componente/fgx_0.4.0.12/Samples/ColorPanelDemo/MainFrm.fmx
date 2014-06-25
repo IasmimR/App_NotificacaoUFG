@@ -1,0 +1,203 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'TfgColorsPanel: Colors panel Demo'
+  ClientHeight = 319
+  ClientWidth = 531
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnShow = FormShow
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object fgColorsPanel: TfgColorsPanel
+    BorderRadius = 5.000000000000000000
+    OnGetColor = fgColorsPanelGetColor
+    OnPaintCell = fgColorsPanelPaintCell
+    Align = Client
+    Height = 309.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    TabOrder = 0
+    Width = 328.000000000000000000
+  end
+  object PanelSettings: TPanel
+    Align = Left
+    Height = 319.000000000000000000
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Width = 193.000000000000000000
+    TabOrder = 1
+    object gbViewSettings: TGroupBox
+      Align = Top
+      StyledSettings = [Family, Size, FontColor, Other]
+      Height = 151.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Text = 'View Settings'
+      TextSettings.Font.Style = [fsBold]
+      Width = 183.000000000000000000
+      TabOrder = 1
+      object Label1: TLabel
+        Height = 22.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 24.000000000000000000
+        Text = 'Cell Size:'
+        Width = 120.000000000000000000
+      end
+      object nbCellSizeWidth: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Cursor = crIBeam
+        Min = 5.000000000000000000
+        Value = 18.000000000000000000
+        Position.X = 105.000000000000000000
+        Position.Y = 50.000000000000000000
+        Width = 66.000000000000000000
+        Height = 22.000000000000000000
+        VertIncrement = 2.000000000000000000
+        OnChangeTracking = nbCellSizeWidthChangeTracking
+      end
+      object nbCellSizeHeight: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Cursor = crIBeam
+        Min = 5.000000000000000000
+        Value = 18.000000000000000000
+        Position.X = 105.000000000000000000
+        Position.Y = 75.000000000000000000
+        Width = 66.000000000000000000
+        Height = 22.000000000000000000
+        VertIncrement = 2.000000000000000000
+        OnChangeTracking = nbCellSizeWidthChangeTracking
+      end
+      object Label2: TLabel
+        Height = 21.000000000000000000
+        Position.X = 30.000000000000000000
+        Position.Y = 50.000000000000000000
+        Text = 'Width'
+        Width = 57.000000000000000000
+      end
+      object Label3: TLabel
+        Height = 21.000000000000000000
+        Position.X = 30.000000000000000000
+        Position.Y = 75.000000000000000000
+        Text = 'Height'
+        Width = 57.000000000000000000
+      end
+      object Label4: TLabel
+        Height = 21.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 115.000000000000000000
+        Text = 'Border Radius'
+        Width = 91.000000000000000000
+      end
+      object nbBorderRadius: TNumberBox
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 7
+        Cursor = crIBeam
+        Value = 5.000000000000000000
+        Position.X = 105.000000000000000000
+        Position.Y = 115.000000000000000000
+        Width = 66.000000000000000000
+        Height = 22.000000000000000000
+        VertIncrement = 2.000000000000000000
+        OnChangeTracking = nbBorderRadiusChangeTracking
+      end
+      object Line1: TLine
+        Height = 6.000000000000000000
+        LineType = Top
+        Position.X = 10.000000000000000000
+        Position.Y = 105.000000000000000000
+        Stroke.Color = claGray
+        Width = 166.000000000000000000
+      end
+    end
+    object gbKindSettings: TGroupBox
+      Align = Top
+      StyledSettings = [Family, Size, FontColor, Other]
+      Height = 65.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 161.000000000000000000
+      Text = 'Kind settings'
+      TextSettings.Font.Style = [fsBold]
+      Width = 183.000000000000000000
+      TabOrder = 2
+      object Label5: TLabel
+        Height = 21.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 30.000000000000000000
+        Text = 'Preset Kind'
+        Width = 66.000000000000000000
+      end
+      object cbPresetKind: TComboBox
+        DisableFocusEffect = False
+        Height = 22.000000000000000000
+        ItemIndex = 0
+        Position.X = 85.000000000000000000
+        Position.Y = 30.000000000000000000
+        TabOrder = 2
+        Width = 85.000000000000000000
+        OnChange = cbPresetKindChange
+        object ListBoxItem1: TListBoxItem
+          Height = 19.000000000000000000
+          TabOrder = 0
+          Text = 'Web Safe'
+          Width = 19.000000000000000000
+        end
+        object ListBoxItem2: TListBoxItem
+          Height = 19.000000000000000000
+          TabOrder = 1
+          Text = 'X11'
+          Width = 19.000000000000000000
+        end
+        object ListBoxItem3: TListBoxItem
+          Height = 19.000000000000000000
+          TabOrder = 2
+          Text = 'Custom'
+          Width = 19.000000000000000000
+        end
+      end
+    end
+    object gbEventSettings: TGroupBox
+      Align = Top
+      StyledSettings = [Family, Size, FontColor, Other]
+      Height = 85.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 231.000000000000000000
+      Text = 'Event settings'
+      TextSettings.Font.Style = [fsBold]
+      Width = 183.000000000000000000
+      TabOrder = 3
+      object cbUserPainting: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 25.000000000000000000
+        TabOrder = 1
+        Text = 'Custom painting'
+        Width = 120.000000000000000000
+        OnChange = cbUserPaintingChange
+      end
+      object cbUsersColors: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 50.000000000000000000
+        TabOrder = 2
+        Text = 'Get user'#39's colors'
+        Width = 146.000000000000000000
+        OnChange = cbUserPaintingChange
+      end
+    end
+  end
+end

@@ -1,0 +1,131 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'FormMain'
+  ClientHeight = 460
+  ClientWidth = 320
+  Padding.Left = 10.000000000000000000
+  Padding.Top = 10.000000000000000000
+  Padding.Right = 10.000000000000000000
+  Padding.Bottom = 10.000000000000000000
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object Button1: TButton
+    Align = Horizontal
+    Height = 44.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 251.000000000000000000
+    TabOrder = 0
+    Text = 'Move Mail To...'
+    Width = 300.000000000000000000
+    OnClick = Button1Click
+  end
+  object Label2: TLabel
+    Align = Top
+    AutoSize = True
+    Height = 114.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 60.000000000000000000
+    StyleLookup = 'embossedlabel'
+    TextSettings.VertAlign = Leading
+    Text = 
+      'This feature allows to show about observance of the accepted sta' +
+      'ndards. For Example: On iOS button Cancel and Destruction will a' +
+      'ppear on bottom of menu.'
+    Width = 300.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Top
+    Height = 50.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Width = 300.000000000000000000
+    object Label1: TLabel
+      Align = Left
+      StyledSettings = [Family, Size, FontColor]
+      Height = 50.000000000000000000
+      StyleLookup = 'listboxitemlabel'
+      TextSettings.Font.Style = [fsBold]
+      Text = 'Use OS specific UI Guidline:'
+      Width = 225.000000000000000000
+    end
+    object SwitchUseUIGuildline: TSwitch
+      Align = Right
+      Height = 35.000000000000000000
+      IsChecked = True
+      Position.X = 245.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 1
+      Width = 55.000000000000000000
+    end
+  end
+  object LabelError: TLabel
+    Align = Bottom
+    StyledSettings = [Family, Size, Style]
+    Height = 66.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 384.000000000000000000
+    TextSettings.FontColor = claRed
+    TextSettings.HorzAlign = Center
+    Text = 'Action Sheet is not supported on current platform'
+    Visible = False
+    Width = 300.000000000000000000
+  end
+  object LabelLog: TLabel
+    Align = Top
+    Height = 33.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 184.000000000000000000
+    Width = 300.000000000000000000
+  end
+  object fgActionSheet: TfgActionSheet
+    Actions = <
+      item
+        Caption = 'To Inbox'
+        OnClick = fgActionSheetActions0Click
+      end
+      item
+        Caption = 'Cancel'
+        Style = Cancel
+        OnClick = fgActionSheetActions0Click
+      end
+      item
+        Caption = 'To Archive'
+        OnClick = fgActionSheetActions0Click
+      end
+      item
+        Caption = 'To Trash'
+        Style = Destructive
+        OnClick = fgActionSheetActions0Click
+      end
+      item
+        Action = ActionToSpam
+        Caption = 'To Spam'
+        OnClick = fgActionSheetActions0Click
+      end
+      item
+        Visible = False
+        OnClick = fgActionSheetActions0Click
+      end>
+    Title = 'Move E-mail to..'
+    Left = 116
+    Top = 208
+  end
+  object ActionList: TActionList
+    Left = 200
+    Top = 208
+    object ActionToSpam: TAction
+      Text = 'To Spam'
+      OnExecute = fgActionSheetActions0Click
+    end
+  end
+end

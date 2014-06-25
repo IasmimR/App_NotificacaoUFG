@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/06/13 20:46:29.000.570,=D:\Android\SonsAndroid\Unit1.pas</Transaction>
+    <Transaction>2014/06/13 20:46:46.000.979,D:\Android\SonsAndroid\Popayer.pas=D:\Android\SonsAndroid\Unit1.pas</Transaction>
+    <Transaction>2014/06/13 20:46:46.000.979,D:\Android\SonsAndroid\Popayer.fmx=D:\Android\SonsAndroid\Unit1.fmx</Transaction>
+    <Transaction>2014/06/14 00:25:59.000.361,D:\Android\SonsAndroid\PlayingAudio.dproj=D:\Android\SonsAndroid\SonsDaMinhaInfancia.dproj</Transaction>
+    <Transaction>2014/06/14 00:41:00.000.525,D:\Android\SonsAndroid\Popayer.fmx=D:\Android\SonsAndroid\tomJerry.fmx</Transaction>
+    <Transaction>2014/06/14 00:41:00.000.525,D:\Android\SonsAndroid\Popayer.pas=D:\Android\SonsAndroid\tomJerry.pas</Transaction>
+    <Transaction>2014/06/14 00:41:25.000.934,=D:\Android\SonsAndroid\Popayer.pas</Transaction>
+  </Transactions>
+	<MobileDevice>66934f65</MobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

@@ -1,0 +1,59 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'FormMain'
+  ClientHeight = 548
+  ClientWidth = 320
+  Padding.Left = 10.000000000000000000
+  Padding.Top = 10.000000000000000000
+  Padding.Right = 10.000000000000000000
+  Padding.Bottom = 10.000000000000000000
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object LayoutButtons: TLayout
+    Align = Center
+    Height = 95.000000000000000000
+    Width = 222.000000000000000000
+    object btnProgressDialog: TButton
+      Align = Top
+      Height = 44.000000000000000000
+      TabOrder = 0
+      Text = 'Show Progress Dialog'
+      Width = 222.000000000000000000
+      OnClick = btnProgressDialogClick
+    end
+    object btnActivityDialog: TButton
+      Align = Top
+      Height = 44.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Position.Y = 49.000000000000000000
+      TabOrder = 1
+      Text = 'Show Activity Dialog'
+      Width = 222.000000000000000000
+      OnClick = btnActivityDialogClick
+    end
+  end
+  object fgProgressDialog: TfgProgressDialog
+    Message = 'Downloading...'
+    Title = 'Please, Wait'
+    OnShow = fgProgressDialogShow
+    OnHide = fgProgressDialogHide
+    Left = 40
+    Top = 48
+  end
+  object fgActivityDialog: TfgActivityDialog
+    Message = 'Please, Wait'
+    Title = 'Downloading content'
+    OnShow = fgProgressDialogShow
+    OnHide = fgProgressDialogHide
+    Left = 256
+    Top = 48
+  end
+end
