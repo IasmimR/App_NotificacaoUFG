@@ -12,4 +12,21 @@ Serial Number(s): CSFD-EVQ7UV-E9WJ8E-MDNS
 
 Login Name: djmimirv@hotmail.com 
 
+------------------------------------------------
+APOIO SISTEMA - HELP
 
+1) Instalar o executável .apk (que está em: ..\App_NotificacaoUFG\Executavel)
+
+2) Cadastrar usuário no app
+  Assim que abrir o aplicativo pela primeira vez, o sistema irá oferecer uma tela chamada 'Portal do Aluno' para preencher o nome, matricula, e e-mail. (Como não está integrado com o sistema da UFG, pode ser oferecido quaisquer dados ficticios).
+Depois do preenchimento, é necessário clicar em 'logar'. Para logar, é obrigatório o preenchimento do nome e número de matrícula.
+
+3)Acesso app
+Ao acessar, a primeira tela que irá aparecer é: 'Categorias', onde contém várias categorias de notificações. Ao clicar na categoria, o usuário irá conferir as notificações vinculadas a categoria.
+
+4)Testar recebimento de notificação
+ Na aba 'configurações'é possível testar o recebimento de uma notificação. Utilizando o componente 'ativar notificação'
+
+
+5) Deslogar do sistema
+Na aba 'configurações'basta clicar no ícone 'lixeira' que irá ser feito o deslogue do sistema.
